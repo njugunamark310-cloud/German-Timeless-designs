@@ -101,3 +101,31 @@ main {
     width: min(1200px, 90%);
     margin: 0 auto;
 }
+
+section {
+    margin: 0 0 65px;
+    padding: 35px 0;
+    scroll-margin-top: 100px;
+}
+
+#home {
+    padding-top: 80px;
+    text-align: left;
+}
+
+#home h1 {
+    margin-bottom: 18px;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 4px;
+    background: linear-gradient(
+        110deg,
+        #ffffff 15%,
+        #aabbd1 50%,
+        #398bff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
