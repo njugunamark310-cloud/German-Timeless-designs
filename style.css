@@ -52,3 +52,23 @@ nav {
     gap: 30px;
 }
 
+.logo {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.logo::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    margin-right: 12px;
+    vertical-align: -5px;
+    background: var(--blue);
+    border-radius: 4px;
+}
+
