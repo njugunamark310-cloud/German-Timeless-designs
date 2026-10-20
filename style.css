@@ -9,3 +9,15 @@
     --border: rgba(255, 255, 255, 0.10);
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
