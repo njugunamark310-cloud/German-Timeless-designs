@@ -96,3 +96,8 @@ nav ul a:focus-visible {
     color: white;
     background: rgba(57, 139, 255, 0.12);
 }
+
+main {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
