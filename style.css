@@ -1,0 +1,11 @@
+:root {
+    --bg: #080b10;
+    --bg-light: #10151d;
+    --panel: #131a24;
+    --silver: #e7edf5;
+    --muted: #9ba8b8;
+    --blue: #398bff;
+    --blue-light: #79b4ff;
+    --border: rgba(255, 255, 255, 0.10);
+    --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
