@@ -72,3 +72,27 @@ nav {
     border-radius: 4px;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    padding: 9px 12px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+nav ul a:hover,
+nav ul a:focus-visible {
+    color: white;
+    background: rgba(57, 139, 255, 0.12);
+}
