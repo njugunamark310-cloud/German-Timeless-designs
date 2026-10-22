@@ -165,3 +165,38 @@ h2::before {
     background: linear-gradient(var(--blue), #174c9c);
     border-radius: 5px;
 }
+
+h3 {
+    margin: 25px 0 12px;
+    color: var(--blue-light);
+}
+
+p {
+    margin: 0 0 22px;
+    color: #bdc7d5;
+}
+
+b,
+strong {
+    color: #f5f8ff;
+}
+
+em {
+    color: var(--blue-light);
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 35px auto;
+    object-fit: contain;
+    background: #000;
+    border: 1px solid rgba(100, 165, 255, 0.35);
+    border-radius: 16px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03),
+        0 25px 70px rgba(0, 0, 0, 0.55);
+}
