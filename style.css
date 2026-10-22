@@ -200,3 +200,28 @@ video {
         0 0 0 1px rgba(255, 255, 255, 0.03),
         0 25px 70px rgba(0, 0, 0, 0.55);
 }
+
+img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+img:hover {
+    transform: translateY(-4px);
+    border-color: rgba(57, 139, 255, 0.65);
+}
+
+ul {
+    padding-left: 28px;
+}
+
+main section ul {
+    margin: 20px 0 30px;
+}
