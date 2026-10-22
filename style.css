@@ -248,3 +248,23 @@ main section li:hover {
 main section li::marker {
     color: var(--blue);
 }
+
+a {
+    transition: color 0.25s ease;
+}
+
+main a {
+    color: var(--blue-light);
+}
+
+main a:hover {
+    color: white;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 35px 20px;
+    text-align: center;
+    background: #05070a;
+    border-top: 1px solid var(--border);
+}
