@@ -238,3 +238,13 @@ main section li {
         border-color 0.25s ease,
         transform 0.25s ease;
 }
+
+main section li:hover {
+    background: rgba(57, 139, 255, 0.07);
+    border-color: rgba(57, 139, 255, 0.35);
+    transform: translateX(4px);
+}
+
+main section li::marker {
+    color: var(--blue);
+}
