@@ -268,3 +268,112 @@ footer {
     background: #05070a;
     border-top: 1px solid var(--border);
 }
+
+footer p {
+    margin: 0;
+    color: #7f8da0;
+    font-size: 0.9rem;
+}
+
+a:focus-visible,
+video:focus-visible {
+    outline: 2px solid var(--blue-light);
+    outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul a {
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #heritage,
+    #pre-facelift-and-facelift,
+    #models,
+    #technology,
+    #performance {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    nav {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    nav ul a {
+        padding: 7px 8px;
+        font-size: 0.8rem;
+    }
+
+    #home {
+        padding-top: 45px;
+    }
+
+    #home h1 {
+        letter-spacing: 1px;
+    }
+
+    section {
+        margin-bottom: 35px;
+        padding: 20px 0;
+    }
+
+    h2 {
+        margin-top: 32px;
+    }
+
+    #heritage,
+    #pre-facelift-and-facelift,
+    #models,
+    #technology,
+    #performance {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    main section li {
+        padding: 10px 12px;
+    }
+
+    video {
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
