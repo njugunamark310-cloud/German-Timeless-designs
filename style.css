@@ -1,0 +1,379 @@
+:root {
+    --bg: #080b10;
+    --bg-light: #10151d;
+    --panel: #131a24;
+    --silver: #e7edf5;
+    --muted: #9ba8b8;
+    --blue: #398bff;
+    --blue-light: #79b4ff;
+    --border: rgba(255, 255, 255, 0.10);
+    --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    background:
+        radial-gradient(ellipse at top, #15243a 0%, transparent 45%),
+        var(--bg);
+    color: var(--silver);
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8, 11, 16, 0.88);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    width: min(1400px, 92%);
+    min-height: 82px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.logo::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    margin-right: 12px;
+    vertical-align: -5px;
+    background: var(--blue);
+    border-radius: 4px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    padding: 9px 12px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+nav ul a:hover,
+nav ul a:focus-visible {
+    color: white;
+    background: rgba(57, 139, 255, 0.12);
+}
+
+main {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 0 65px;
+    padding: 35px 0;
+    scroll-margin-top: 100px;
+}
+
+#home {
+    padding-top: 80px;
+    text-align: left;
+}
+
+#home h1 {
+    margin-bottom: 18px;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 4px;
+    background: linear-gradient(
+        110deg,
+        #ffffff 15%,
+        #aabbd1 50%,
+        #398bff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home > p:first-of-type {
+    margin: 24px 0;
+    color: var(--blue-light);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    letter-spacing: 1px;
+}
+
+strong em {
+    display: inline-block;
+    margin: 18px 0 12px;
+    color: var(--silver);
+    font-size: 1.15rem;
+    font-style: normal;
+}
+
+h2 {
+    position: relative;
+    margin: 45px 0 20px;
+    padding-left: 18px;
+    color: #f2f6fc;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    width: 4px;
+    background: linear-gradient(var(--blue), #174c9c);
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 25px 0 12px;
+    color: var(--blue-light);
+}
+
+p {
+    margin: 0 0 22px;
+    color: #bdc7d5;
+}
+
+b,
+strong {
+    color: #f5f8ff;
+}
+
+em {
+    color: var(--blue-light);
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 35px auto;
+    object-fit: contain;
+    background: #000;
+    border: 1px solid rgba(100, 165, 255, 0.35);
+    border-radius: 16px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03),
+        0 25px 70px rgba(0, 0, 0, 0.55);
+}
+
+img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+img:hover {
+    transform: translateY(-4px);
+    border-color: rgba(57, 139, 255, 0.65);
+}
+
+ul {
+    padding-left: 28px;
+}
+
+main section ul {
+    margin: 20px 0 30px;
+}
+
+main section li {
+    margin: 12px 0;
+    padding: 12px 16px;
+    color: #c5cfdd;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+main section li:hover {
+    background: rgba(57, 139, 255, 0.07);
+    border-color: rgba(57, 139, 255, 0.35);
+    transform: translateX(4px);
+}
+
+main section li::marker {
+    color: var(--blue);
+}
+
+a {
+    transition: color 0.25s ease;
+}
+
+main a {
+    color: var(--blue-light);
+}
+
+main a:hover {
+    color: white;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 35px 20px;
+    text-align: center;
+    background: #05070a;
+    border-top: 1px solid var(--border);
+}
+
+footer p {
+    margin: 0;
+    color: #7f8da0;
+    font-size: 0.9rem;
+}
+
+a:focus-visible,
+video:focus-visible {
+    outline: 2px solid var(--blue-light);
+    outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul a {
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #heritage,
+    #pre-facelift-and-facelift,
+    #models,
+    #technology,
+    #performance {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    nav {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    nav ul a {
+        padding: 7px 8px;
+        font-size: 0.8rem;
+    }
+
+    #home {
+        padding-top: 45px;
+    }
+
+    #home h1 {
+        letter-spacing: 1px;
+    }
+
+    section {
+        margin-bottom: 35px;
+        padding: 20px 0;
+    }
+
+    h2 {
+        margin-top: 32px;
+    }
+
+    #heritage,
+    #pre-facelift-and-facelift,
+    #models,
+    #technology,
+    #performance {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    main section li {
+        padding: 10px 12px;
+    }
+
+    video {
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
